@@ -1,0 +1,92 @@
+body {
+    background: linear-gradient(to bottom, rgb(232, 245, 233), rgb(241, 248, 233));
+    min-height: 100vh;
+    margin: 0;
+    font-family: Verdana, Geneva, sans-serif;
+    color: rgb(51, 51, 51);
+}
+
+h1 {
+    box-sizing: border-box;
+    width: 700px;
+    margin: 30px auto 0;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(46, 125, 50);
+    color: rgb(255, 255, 255);
+    border-radius: 10px 10px 0 0;
+}
+
+form {
+    box-sizing: border-box;
+    width: 700px;
+    margin: 0 auto 30px;
+    padding: 10px 30px 25px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 2px 6px 1px rgb(165, 165, 165);
+}
+
+h3 {
+    margin-top: 25px;
+    color: rgb(27, 94, 32);
+    font-weight: bold;
+}
+
+strong {
+    font-weight: normal;
+}
+
+table {
+    border: none;
+}
+
+td {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid rgb(200, 230, 201);
+}
+
+td:first-child {
+    color: rgb(27, 94, 32);
+    background-color: rgb(241, 248, 233);
+}
+
+td[colspan="2"] {
+    background-color: rgb(255, 255, 255);
+    border-bottom: none;
+}
+
+p {
+    margin: 5px 0;
+}
+
+input[type="text"], select, textarea {
+    width: 95%;
+    padding: 8px;
+    background-color: rgb(250, 255, 250);
+    border: 1px solid rgb(165, 214, 167);
+    border-radius: 5px;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+input[type="text"]:hover, select:hover, textarea:hover {
+    border: 1px solid rgb(46, 125, 50);
+}
+
+input[type="submit"] {
+    margin-top: 10px;
+    padding: 10px 30px;
+    background-color: rgb(67, 160, 71);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight: normal;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(46, 125, 50);
+    box-shadow: 0 2px 3px 0.5px rgb(165, 165, 165);
+}

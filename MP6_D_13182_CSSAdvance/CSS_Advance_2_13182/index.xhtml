@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Lembar Registrasi Acara</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+    <h1>Lembar Registrasi Acara</h1>
+    <form action="" method="post" enctype="multipart/form-data">
+
+        <h3>Identitas Peserta</h3>
+        <table cellspacing="4" cellpadding="4" border="1"
+               style="border-collapse:collapse; width:100%;">
+            <tr>
+                <td style="width:32%;">
+                    <label for="namaLengkap"><strong>Nama Peserta</strong></label>
+                </td>
+                <td>
+                    <input type="text" id="namaLengkap" name="namaLengkap" size="30" />
+                </td>
+            </tr>
+            <tr>
+                <td style="width:32%;">
+                    <label for="nim"><strong>NPM</strong></label>
+                </td>
+                <td>
+                    <input type="text" id="nim" name="nim" size="30" />
+                </td>
+            </tr>
+            <tr>
+                <td style="width:32%;">
+                    <label for="prodi"><strong>Bidang Studi</strong></label>
+                </td>
+                <td>
+                    <select id="prodi" name="prodi">
+                        <option>Informatika</option>
+                        <option>Sistem Informasi</option>
+                        <option>Teknik Industri</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td style="width:32%;">
+                    <strong>Gender Anda</strong>
+                </td>
+                <td>
+                    <input type="radio" id="laki" name="jenisK"
+                           value="Laki-laki" />
+                    <label for="laki">Pria</label>
+                    <input type="radio" id="perempuan" name="jenisK"
+                           value="Perempuan" />
+                    <label for="perempuan">Wanita</label>
+                </td>
+            </tr>
+        </table>
+
+        <h3>Opsi Acara</h3>
+        <table cellspacing="4" cellpadding="4" border="1"
+               style="border-collapse:collapse; width:100%;">
+            <tr>
+                <td style="width:32%;">
+                    <strong>Tipe Acara</strong>
+                </td>
+                <td>
+                    <input type="radio" id="seminar" name="kegiatan"
+                           value="Seminar" />
+                    <label for="seminar">Talkshow</label>
+                    <input type="radio" id="pelatihan" name="kegiatan"
+                           value="Pelatihan" />
+                    <label for="pelatihan">Workshop</label>
+                    <input type="radio" id="diskusi" name="kegiatan"
+                           value="Diskusi" />
+                    <label for="diskusi">Dialog</label>
+                </td>
+            </tr>
+            <tr>
+                <td style="width:32%;">
+                    <strong>Topik Favorit</strong>
+                </td>
+                <td>
+                    <p>
+                        <input type="checkbox" id="teknologi" name="minat"
+                               value="Teknologi" />
+                        <label for="teknologi">Inovasi</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="organisasi" name="minat"
+                               value="Organisasi" />
+                        <label for="organisasi">Komunitas</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="karier" name="minat"
+                               value="Karier" />
+                        <label for="karier">Profesi</label>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td style="width:32%;">
+                    <label for="waktu"><strong>Jam Acara</strong></label>
+                </td>
+                <td>
+                    <select id="waktu" name="waktu">
+                        <option>Pagi</option>
+                        <option>Siang</option>
+                        <option>Petang</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+        <h3>Berkas Registrasi</h3>
+        <table cellspacing="4" cellpadding="4" border="1"
+               style="border-collapse:collapse; width:100%;">
+            <tr>
+                <td style="width:32%;">
+                    <label for="harapan">
+                        <strong>Tujuan Mengikuti Acara</strong>
+                    </label>
+                </td>
+                <td>
+                    <textarea id="harapan" name="harapan"
+                              rows="5" cols="30"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td style="width:32%;">
+                    <label for="bukti"><strong>Struk Transfer</strong></label>
+                </td>
+                <td>
+                    <input type="file" id="bukti" name="bukti" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <input type="submit" name="kirim" value="Daftar" />
+                </td>
+            </tr>
+        </table>
+
+    </form>
+</body>
+</html>
